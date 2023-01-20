@@ -2,8 +2,8 @@ import {useState} from "react";
 import "./Login.css"
 import {login} from "./hooks/useData";
 function Login() {
-    const [nom,setNom]=useState("")
-    const [password,setPassword]=useState("")
+    const [nom,setNom]=useState("james")
+    const [password,setPassword]=useState("j")
     const [donne,setDonne]=useState("");
     const handleSubmit=(event)=>{
         event.preventDefault();
