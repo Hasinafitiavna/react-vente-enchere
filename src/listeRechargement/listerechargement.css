@@ -1,0 +1,13 @@
+.box{
+    border: 20px solid #FFFFFF;
+    background-color: #FFF;
+}
+section{
+    display :flex;
+    gap: 1rem;
+}
+/*.con{*/
+/*    !*display: flex;*!*/
+/*    flex-flow:row ;*/
+/*    border-radius: 10px;*/
+/*}*/
