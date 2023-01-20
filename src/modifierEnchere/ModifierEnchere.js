@@ -37,7 +37,7 @@ function ModifierEnchere() {
         // alert(list.id);
         const loadData = async ()=>{
             const id=localStorage.getItem("idEnchere");
-            const url="http://webservice-enchere-production.up.railway.app/api/encheres/getEncherebyId/"+id;
+            const url="https://webservice-enchere-production.up.railway.app/api/encheres/getEncherebyId/"+id;
             const data = await fetch(url);
             const json =await data.json();
             // setList(json);
@@ -51,7 +51,7 @@ function ModifierEnchere() {
     },[]);
     useEffect(()=>{
         const loadData = async ()=>{
-            const url="http://webservice-enchere-production.up.railway.app/api/encheres/listeproduit";
+            const url="https://webservice-enchere-production.up.railway.app/api/encheres/listeproduit";
             const data = await fetch(url);
             const json =await data.json();
             setList(json);

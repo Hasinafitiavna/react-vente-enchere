@@ -10,7 +10,7 @@ function ListeRechargement(){
 
     useEffect(()=>{
         const loadData = async ()=>{
-            const url="http://webservice-enchere-production.up.railway.app/api/encheres/listerechargementcompte"
+            const url="https://webservice-enchere-production.up.railway.app/api/encheres/listerechargementcompte"
             const data = await fetch(url);
             const json =await data.json();
             setList(json)

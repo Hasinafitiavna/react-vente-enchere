@@ -5,7 +5,7 @@ export function useData(){
 
     useEffect(()=>{
         const loadData = async ()=>{
-            const url="http://webservice-enchere-production.up.railway.app/api/encheres/listeenchere"
+            const url="https://webservice-enchere-production.up.railway.app/api/encheres/listeenchere"
             const data = await fetch(url);
             const json =await data.json();
             setData(json)
@@ -23,7 +23,7 @@ export function useEnchere(id){
 
     useEffect(()=>{
         const loadData = async ()=>{
-            const url="http://webservice-enchere-production.up.railway.app/api/encheres/getEncherebyId/"+id;
+            const url="https://webservice-enchere-production.up.railway.app/api/encheres/getEncherebyId/"+id;
             const data = await fetch(url);
             const json =await data.json();
             setData(json)
@@ -37,25 +37,25 @@ export function useEnchere(id){
 }
 
 export async function login(name,password ){
-    const url="http://webservice-enchere-production.up.railway.app/api/encheres/loginadmin/"+name+"/"+password;
+    const url="https://webservice-enchere-production.up.railway.app/api/encheres/loginadmin/"+name+"/"+password;
     return await fetch(url);
 }
 
 export async function lienImage(id){
-    const url="http://webservice-enchere-production.up.railway.app/api/encheres/lienimage/"+id;
+    const url="https://webservice-enchere-production.up.railway.app/api/encheres/lienimage/"+id;
     return await fetch(url);
 }
 export async function validerRechargerCompte(id,idclient,montant ){
-    const url="http://webservice-enchere-production.up.railway.app/api/encheres/validerRechargerCompte/"+id+"/"+idclient+"/"+montant;
+    const url="https://webservice-enchere-production.up.railway.app/api/encheres/validerRechargerCompte/"+id+"/"+idclient+"/"+montant;
     return await fetch(url);
 }
 
 export async function updateEnchere(id,idproduit,datedebut,datefin,montant ){
-    const url="http://webservice-enchere-production.up.railway.app/api/encheres/updateEnchere/"+id+"/"+idproduit+"/"+datedebut+"/"+datefin+"/"+montant;
+    const url="https://webservice-enchere-production.up.railway.app/api/encheres/updateEnchere/"+id+"/"+idproduit+"/"+datedebut+"/"+datefin+"/"+montant;
     return await fetch(url);
 }
 export async function liste() {
-    const url="http://webservice-enchere-production.up.railway.app/api/encheres/listeenchere";
+    const url="https://webservice-enchere-production.up.railway.app/api/encheres/listeenchere";
     return await fetch(url);
 }
 export async function useTableau() {
@@ -63,7 +63,7 @@ export async function useTableau() {
 
     useEffect(()=>{
         const loadData = async ()=>{
-            const url="http://webservice-enchere-production.up.railway.app/api/encheres/getStat";
+            const url="https://webservice-enchere-production.up.railway.app/api/encheres/getStat";
             const data = await fetch(url);
             const json =await data.json();
             setData(json)
