@@ -17,7 +17,7 @@ function Login() {
                     window.location.href="/liste";
                 }
                 else {
-                    setDonne("verifier que tout est correct")
+                    setDonne("Verifier que tout est correct")
                 }
             });
         }
