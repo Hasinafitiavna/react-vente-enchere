@@ -45,7 +45,7 @@ function ListeEnchere() {
         //     // console.log(await res.text())
         //     image=await res.text();
         // })
-        const images="./ressources/"+liste.image;
+        const images=liste.image;
         // console.log(image)
         return(
             <div key={index} className={b} onClick={handleOnclick}>
